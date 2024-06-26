@@ -65,25 +65,26 @@ export default class MainComponent extends React.Component {
                         <div className='col-10'>
                             <div className='row row-cols-3'>
                                 {this.state.products.map((e) => (
-                                    <div className='col my-3' key={e.p_id}>
-                                        <div className='card'>
-                                            <div className='card-header'>
-                                                <img src={e.p_img} className='card-img-top' alt={e.p_name} />
-                                            </div>
-                                            <div className='card-body'>
-                                                <div className='h2 card-title'>{e.p_name}</div>
-                                                <div className='h4 card-subtitle text-muted'>₹{e.p_cost}</div>
-                                            </div>
-                                            <div className='card-footer'>
-                                                <button onClick={() => { alert(e.p_desc) }}
-                                                    className="btn btn-outline-info btn-block btn-sm"
-                                                    data-toggle="tooltip"
-                                                    data-placement="bottom"
-                                                    title={e.p_desc}>Learn More</button>
-                                                <button onClick={() => { this.addToCart(e) }} className="btn btn-outline-success btn-block btn-sm">Add to Cart</button>
-                                            </div>
+                                    <div className='col-12 col-sm-6 col-md-4 col-lg-3 my-3' key={e.p_id}>
+                                    <div className='card'>
+                                        <div className='card-header'>
+                                            <img src={e.p_img} className='card-img-top img-fluid' alt={e.p_name} />
+                                        </div>
+                                        <div className='card-body'>
+                                            <div className='h2 card-title'>{e.p_name}</div>
+                                            <div className='h4 card-subtitle text-muted'>₹{e.p_cost}</div>
+                                        </div>
+                                        <div className='card-footer'>
+                                            <button onClick={() => { alert(e.p_desc) }}
+                                                className="btn btn-outline-info btn-block btn-sm"
+                                                data-toggle="tooltip"
+                                                data-placement="bottom"
+                                                title={e.p_desc}>Learn More</button>
+                                            <button onClick={() => { this.addToCart(e) }} className="btn btn-outline-success btn-block btn-sm">Add to Cart</button>
                                         </div>
                                     </div>
+                                </div>
+                                
                                 ))}
                             </div>
                         </div>
