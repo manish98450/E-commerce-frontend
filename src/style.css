@@ -1,57 +1,11 @@
-.img {
-    width: 100px;
-    height: 100px;
-}
-
-
-.card-img-top:hover {
-    position: relative;
-    transition: all 0.5s;
-    transform-origin: center;
-    transform: scale(1.05);
-}
-
-
-.card-img-top {
-    transition: all 0.5s;
-}
-
-
-.mrng {
-    color: white;
-    background: linear-gradient(to right, blue, yellow);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-.aftr {
-    color: red;
-    background: linear-gradient(to right, yellow, orange);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-.eve {
-    color: blue;
-    background: linear-gradient(to right, orange, gray);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-/* style.css */
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-
-
-
-
+/* Ensure the body and html take full height */
 body, html {
     height: 100%;
     margin: 0;
@@ -76,11 +30,27 @@ body, html {
     z-index: 1;
 }
 
+/* Card Styles */
+.card-img-top {
+    transition: all 0.5s;
+}
 
+.card-img-top:hover {
+    position: relative;
+    transition: all 0.5s;
+    transform-origin: center;
+    transform: scale(1.05);
+}
+
+/* Image and Card Styles */
+.img {
+    width: 100%;
+    height: auto;
+}
 
 .transparent-card {
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency by changing the alpha value (0.5) */
-    border: none; /* Optional: Remove borders for a cleaner look */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
 }
 
 .team-card {
@@ -107,8 +77,6 @@ body, html {
     margin: 0 auto;
 }
 
-
-
 .map-container {
     text-align: center;
 }
@@ -116,6 +84,54 @@ body, html {
 .map-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 15px; /* Optional: add rounded corners to the map */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Gradient Styles */
+.mrng, .aftr, .eve {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mrng {
+    background: linear-gradient(to right, blue, yellow);
+}
+
+.aftr {
+    background: linear-gradient(to right, yellow, orange);
+}
+
+.eve {
+    background: linear-gradient(to right, orange, gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mrng, .aftr, .eve {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .team-card .card-img-top {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 576px) {
+    .mrng, .aftr, .eve {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .team-card .card-img-top {
+        width: 100px;
+        height: 100px;
+    }
 }
