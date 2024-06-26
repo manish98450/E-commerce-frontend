@@ -90,7 +90,7 @@ export default class MainComponent extends React.Component {
                         <div className='col'>
                             <div className='row my-3'>
                                 {this.state.cart.map((e) => (
-                                    <div className='my-3' key={e.p_id}>
+                                    <div className='col my-3' key={e.p_id}>
                                         <div className='card'>
                                             <div className='card-header'>
                                                 <img src={e.p_img} className='card-img-top' alt={e.p_name} />
