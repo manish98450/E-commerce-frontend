@@ -1,0 +1,121 @@
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.card-img-top:hover {
+    position: relative;
+    transition: all 0.5s;
+    transform-origin: center;
+    transform: scale(1.05);
+}
+
+
+.card-img-top {
+    transition: all 0.5s;
+}
+
+
+.mrng {
+    color: white;
+    background: linear-gradient(to right, blue, yellow);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.aftr {
+    color: red;
+    background: linear-gradient(to right, yellow, orange);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.eve {
+    color: blue;
+    background: linear-gradient(to right, orange, gray);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url('https://png.pngtree.com/background/20231030/original/pngtree-3d-rendering-of-an-ecommerce-app-in-illustration-style-picture-image_5807880.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.transparent-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency by changing the alpha value (0.5) */
+    border: none; /* Optional: Remove borders for a cleaner look */
+}
+
+.team-card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.team-card .card-body {
+    text-align: center;
+}
+
+.team-card .card-header,
+.team-card .card-footer {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.team-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+.map-container {
+    text-align: center;
+}
+
+.map-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Optional: add rounded corners to the map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
